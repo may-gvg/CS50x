@@ -10,7 +10,7 @@ Online api json loader:
 
 
 Data loader csv, xls, db:
-* upload and load analiza .csv, xls, db to the table on dashbord
+* upload and load analiza .csv, .xls, .db to the table on dashbord
 * choose db table to table
 * plot value count of loaded data columns 
 * show statistic values of loaded data 
