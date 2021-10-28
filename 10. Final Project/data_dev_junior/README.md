@@ -1,17 +1,28 @@
-<h2>data_dev_j</h2>
+# DATA DEV JUNIOR
+#### Demo:  
+#### Description:
 
-* Upload and load analiza .csv, xls, db to the table on dashbord
+Online api json loader:
+* json API url loader to the table
+* conecting to NBP API for daily currency rates
+* download daily curency rates
+* plot daily curency rates on graphs
+
+
+Data loader csv, xls, db:
+* upload and load analiza .csv, xls, db to the table on dashbord
 * choose db table to table
-* Plot value count of columns table
-* Show statistic data of the table 
+* plot value count of loaded data columns 
+* show statistic values of loaded data 
 
-* Jason Api url loader to the table
-* Conecting to NBP API for daily currency rates
-* Download dailu curency rates
-* Plot daily curency rates on graphs
+Notebooks 
+* upload and display jupyter, databrics notebook downloaded as analiza.html or analiza2.html
 
-* Upload and display jupyter, databrics notebook downloaded as analiza.html or analiza2.html
+Link
+* link to your jupyter notebook tree
+* link to databrics 
+* link to kaggle 
+* powered by toolband.com
 
-* Link to your jupyter tree, databrics and kaggle and toolband
-
-* bit of Pandas and Pyspark walk through
+Lyrics
+* bit of Pandas and Pyspark basic analisys walk-through
