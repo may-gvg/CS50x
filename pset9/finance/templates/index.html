@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+    <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Stock Name</th>
+          <th scope="col">Number</th>
+          <th scope="col">Current Price</th>
+          <th scope="col">Total Value</th>
+        </tr>
+      </thead>
+      <tbody>
+      {%  for row in table %}
+        <tr>
+          <th scope="row">{{ loop.index }}</th>
+          <td>{{ row['symbol'] }}</td>
+          <td>{{ row['number'] }}</td>
+          <td>{{ row['price'] | usd }}</td>
+          <td>{{ row['value'] | usd }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+    <div>
+        Cash Balance: {{ cash_balance }}
+    </div>
+    <div>
+        Cash Balance + Value Of Stocks: {{ total_value }}
+    </div>
+
+{% endblock %}

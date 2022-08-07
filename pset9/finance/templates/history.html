@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+
+    <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Stock Name</th>
+          <th scope="col">Number</th>
+          <th scope="col">Price</th>
+          <th scope="col">Operation</th>
+          <th scope="col">Datetime</th>
+        </tr>
+      </thead>
+      <tbody>
+      {%  for row in table %}
+        <tr>
+          <th scope="row">{{ loop.index }}</th>
+          <td>{{ row['symbol'] }}</td>
+          <td>{{ row['number'] }}</td>
+          <td>{{ row['price'] | usd }}</td>
+          <td>{{ row['operation'] }}</td>
+          <td>{{ row['datetime'] }}</td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+    </div>
+
+{% endblock %}
