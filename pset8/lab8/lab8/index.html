@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+
+            function checkPart1(no, button) {
+                return_part_1 = document.getElementById('return_part_1');
+                if(no == 1) {
+                    button.style.backgroundColor = 'green';
+                    return_part_1.innerText = "Correct!";
+                } else {
+                    button.style.backgroundColor = 'red';
+                    return_part_1.innerText = "Incorrect!";
+                }
+
+            }
+
+            function checkPart2() {
+                part2input = document.getElementById('part2input');
+                return_part_2 = document.getElementById('return_part_2');
+                if(part2input.value == 'Switzerland') {
+                    return_part_2.innerText = "Correct!";
+                } else {
+                    return_part_2.innerText = "Incorrect!";
+                }
+            }
+
+        </script>
+    </head>
+    <body>
+        <div class="jumbotron">
+            <h1>Trivia!</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the approximate ratio of people to sheep in New Zealand ?</h3>
+                <h2 id="return_part_1"></h2>
+                <button class="button" onclick="checkPart1(1, this);">6 people per 1 sheep</button>
+                <button class="button" onclick="checkPart1(2, this);">3 people per 1 sheep</button>
+                <button class="button" onclick="checkPart1(3, this);">1 people per 1 sheep</button>
+                <button class="button" onclick="checkPart1(4, this);">1 people per 3 sheep</button>
+                <button class="button" onclick="checkPart1(5, this);">1 people per 6 sheep</button>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>In which country is it illegal to own only one guinea pigs, as a lone guinea pigs might get lonely?</h3>
+                <h2 id="return_part_2"></h2>
+                <input id="part2input" type="text">
+                <button id="check" class="input" onclick="checkPart2();">Check Answer</button>
+            </div>
+        </div>
+    </body>
+</html>

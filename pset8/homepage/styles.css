@@ -1,0 +1,35 @@
+pre {
+    tab-size: 4;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+
+h1 {
+    font-family: arial, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 1px;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+.mt-4 {
+    background-color: gray;
+}
